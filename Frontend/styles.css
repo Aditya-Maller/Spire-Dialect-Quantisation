@@ -1,0 +1,178 @@
+/* Cyberpunk / Glassmorphism Presentation CSS Theme for SPIRE Kannada Dialect App */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #E2E8F0;
+}
+
+.main .block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    max-width: 1250px;
+}
+
+/* Background gradient styling */
+.stApp {
+    background: radial-gradient(circle at 10% 20%, rgba(15, 23, 42, 1) 0%, rgba(9, 13, 23, 1) 90%);
+}
+
+/* Glassmorphism Card Container */
+.glass-card {
+    background: rgba(22, 27, 38, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-bottom: 20px;
+}
+
+/* Title Gradient Text */
+.gradient-header {
+    font-size: 2.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #00F2FE 0%, #4FACFE 50%, #7928CA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+}
+
+.sub-header {
+    font-size: 1.05rem;
+    color: #94A3B8;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+/* Live Badge Indicators */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-right: 8px;
+}
+
+.badge-live {
+    background: rgba(0, 242, 254, 0.15);
+    color: #00F2FE;
+    border: 1px solid rgba(0, 242, 254, 0.4);
+}
+
+.badge-quant {
+    background: rgba(121, 40, 202, 0.2);
+    color: #C084FC;
+    border: 1px solid rgba(121, 40, 202, 0.5);
+}
+
+.badge-cpu {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34D399;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+/* Primary Result Display Card */
+.result-card {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.8) 100%);
+    border-radius: 20px;
+    padding: 28px;
+    border: 1.5px solid rgba(0, 242, 254, 0.3);
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.15);
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.result-title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.result-kannada {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #00F2FE;
+    margin-bottom: 12px;
+}
+
+.confidence-pill {
+    display: inline-block;
+    background: linear-gradient(90deg, #10B981 0%, #059669 100%);
+    color: #FFFFFF;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* Probability Bar styling */
+.prob-item {
+    margin-bottom: 14px;
+}
+
+.prob-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.prob-bar-bg {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.prob-bar-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Metric Display Cards */
+.metric-box {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+}
+
+.metric-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #38BDF8;
+}
+
+.metric-label {
+    font-size: 0.8rem;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+/* Custom Pulsing Mic Button Wrapper */
+.mic-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed rgba(0, 242, 254, 0.3);
+    border-radius: 20px;
+    background: rgba(0, 242, 254, 0.02);
+    margin-bottom: 15px;
+}
